@@ -15,7 +15,8 @@ public class SiapAploud {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("tst package");
+        tampilan tmp = new tampilan();
+        tmp.setVisible(true);
     }
     
 }
