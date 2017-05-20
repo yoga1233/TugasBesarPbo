@@ -22,78 +22,102 @@ public class Data {
     private String status;
     private String pekerjaan;
     private String kewarganegaraan;
-    
-    public String getNIK(){
+
+    public String getNIK() {
         return NIK;
     }
-    public void setNIK(String NIK){
+
+    public void setNIK(String NIK) {
         this.NIK = NIK;
     }
-    public String getnama(){
+
+    public String getNama() {
         return nama;
     }
-    public void setnama(String nama){
+
+    public void setNama(String nama) {
         this.nama = nama;
     }
-    public String getTTL(){
+
+    public String getTTL() {
         return TTL;
     }
-    public void setTTL(String TTL){
+
+    public void setTTL(String TTL) {
         this.TTL = TTL;
     }
-    public String getJkl(){
+
+    public String getJkl() {
         return Jkl;
     }
-    public void setJkl(String Jkl){
+
+    public void setJkl(String Jkl) {
         this.Jkl = Jkl;
     }
-    public String getalamat(){
+
+    public String getAlamat() {
         return alamat;
     }
-    public void setalamat(String alamat){
+
+    public void setAlamat(String alamat) {
         this.alamat = alamat;
     }
-    public String getrt(){
+
+    public String getRt() {
         return rt;
     }
-    public void setrt(String rt){
+
+    public void setRt(String rt) {
         this.rt = rt;
     }
-    public String getdesa(){
+
+    public String getDesa() {
         return desa;
     }
-    public void setdesa(String desa){
+
+    public void setDesa(String desa) {
         this.desa = desa;
     }
-    public String getkecamatan(){
+
+    public String getKecamatan() {
         return kecamatan;
     }
-    public void setkecamatan(String kecamatan){
+
+    public void setKecamatan(String kecamatan) {
         this.kecamatan = kecamatan;
     }
-    public String getagama(){
+
+    public String getAgama() {
         return agama;
     }
-    public void setagama(String agama){
+
+    public void setAgama(String agama) {
         this.agama = agama;
     }
-    public String getstatus(){
+
+    public String getStatus() {
         return status;
     }
-    public void getstatus(String status){
+
+    public void setStatus(String status) {
         this.status = status;
     }
-    public String getpekerjaan(){
+
+    public String getPekerjaan() {
         return pekerjaan;
     }
-    public void setpekerjaan(String pekerjaan){
+
+    public void setPekerjaan(String pekerjaan) {
         this.pekerjaan = pekerjaan;
     }
-    public String getkewarganegaraan(){
+
+    public String getKewarganegaraan() {
         return kewarganegaraan;
     }
-    public void setkewarganegaraan(String kewarganegaraan){
+
+    public void setKewarganegaraan(String kewarganegaraan) {
         this.kewarganegaraan = kewarganegaraan;
     }
     
+   
     }

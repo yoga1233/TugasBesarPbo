@@ -5,14 +5,14 @@ import javax.swing.RowFilter;
 import javax.swing.table.TableRowSorter;
 
 public class tampilan extends javax.swing.JFrame {
-    ArrayList<data> rt1rw1 = new ArrayList<>();
-    ArrayList<data> rt2rw1 = new ArrayList<>();
-    ArrayList<data> rt3rw1 = new ArrayList<>();
-    ArrayList<data> rt4rw1 = new ArrayList<>();
-    ArrayList<data> rt1rw2 = new ArrayList<>();
-    ArrayList<data> rt2rw2 = new ArrayList<>();
-    ArrayList<data> rt3rw2 = new ArrayList<>();
-    ArrayList<data> rt4rw2 = new ArrayList<>();
+    ArrayList<Data> rt1rw1 = new ArrayList<>();
+    ArrayList<Data> rt2rw1 = new ArrayList<>();
+    ArrayList<Data> rt3rw1 = new ArrayList<>();
+    ArrayList<Data> rt4rw1 = new ArrayList<>();
+    ArrayList<Data> rt1rw2 = new ArrayList<>();
+    ArrayList<Data> rt2rw2 = new ArrayList<>();
+    ArrayList<Data> rt3rw2 = new ArrayList<>();
+    ArrayList<Data> rt4rw2 = new ArrayList<>();
     DefaultTableModel dm;
    
     public tampilan() {
@@ -22,7 +22,18 @@ public class tampilan extends javax.swing.JFrame {
         sort();
     }
     private void BuatKolom(){
-         
+        dm=(DefaultTableModel) jTable2.getModel();
+      dm.addColumn("Nama");
+      dm.addColumn("NIK");
+      dm.addColumn("TTL");
+      dm.addColumn("Alamat");
+      dm.addColumn("JenisKelamin");
+      dm.addColumn("RT/RW");
+      dm.addColumn("KELURAHAN");          
+      dm.addColumn("Agama");
+      dm.addColumn("Status");
+      dm.addColumn("Pekerjaan");
+      dm.addColumn("Kewarganegaraan");  
       
      }
      private void search (String query){
@@ -499,7 +510,43 @@ public class tampilan extends javax.swing.JFrame {
         String[] rowData={nama, nik ,ttl,alamat,jkl,rt, desa,agama, status,  pekerjaan,  kewarganegaraan};
         dm.addRow(rowData);}
     private void tampildataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tampildataActionPerformed
-      
+    if(sortBjt.isSelected()){
+            if(sortRt1.isSelected()){
+            for (Data isi :rt1rw1){
+            datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
+            }}
+            if(sortRt2.isSelected()){
+            for (Data isi :rt2rw1){
+            datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
+            }}
+            if(sortRt3.isSelected()){
+            for (Data isi :rt3rw1){
+            datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
+            }}
+            if(sortRt4.isSelected()){
+            for (Data isi :rt4rw1){
+            datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
+            }}
+            }  
+         if(sortBjb.isSelected()){
+            if(sortRt1.isSelected()){
+            for (Data isi :rt1rw2){
+            datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
+            }}
+            if(sortRt2.isSelected()){
+            for (Data isi :rt2rw2){
+            datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
+            }}
+            if(sortRt3.isSelected()){
+            for (Data isi :rt3rw2){
+            datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
+            }
+            }
+            if(sortRt4.isSelected()){
+            for (Data isi :rt4rw2){
+            datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
+            }}
+            }  
     }//GEN-LAST:event_tampildataActionPerformed
 
     private void sort(){
